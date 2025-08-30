@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#071022;
+  --nav:#0b2a55;
+  --card:#0b1a2a;
+  --accent:#f0c94d;
+  --muted:#93a4b8;
+  --text:#e6eef8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071022,#081a2a);color:var(--text)}
+.header{display:flex;align-items:center;gap:12px;padding:14px 20px;background:linear-gradient(90deg,var(--nav),#07203a);box-shadow:0 4px 18px rgba(0,0,0,0.5)}
+.header img{width:44px;height:44px}
+.container{max-width:1100px;margin:24px auto;padding:16px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+.center{display:flex;align-items:center;justify-content:center}
+.login-box{width:380px;padding:22px;text-align:center;background:#0f2746;border-radius:12px}
+.login-box input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:#071a33;color:var(--text)}
+.btn{padding:10px 14px;border-radius:8px;border:0;background:var(--nav);color:var(--text);cursor:pointer;font-weight:700}
+.btn:hover{filter:brightness(1.05)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--nav);color:#fff}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th{background:rgba(255,255,255,0.03);padding:10px;text-align:left;color:var(--muted);font-size:13px}
+.table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.02);background:rgba(0,0,0,0.08)}
+.small{color:var(--muted);font-size:13px}
+.form-row{display:flex;gap:8px;flex-wrap:wrap}
+.input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.search{display:flex;gap:8px;align-items:center}
+.pill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:700}
+.footer{margin-top:18px;color:var(--muted);text-align:center;font-size:13px}

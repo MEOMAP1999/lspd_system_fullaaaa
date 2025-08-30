@@ -1,0 +1,24 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LSPD • Staff</title><link rel="stylesheet" href="assets/style.css"></head><body>
+  <div class="topbar header"><div style="display:flex;align-items:center;gap:12px"><img src="assets/lspd_badge.svg"><div class="small">LSPD • Admin</div></div><div><button class="btn" onclick="window.location.href='home.html'">Home</button> <button class="btn" onclick="logout()">Đăng xuất</button></div></div>
+  <div class="container">
+    <div class="card">
+      <h3>Quản lý nhân sự</h3>
+      <form id="addStaffForm" style="display:grid;gap:8px;grid-template-columns:1fr 1fr">
+        <input id="staffFullname" class="input" placeholder="Họ và tên" required>
+        <input id="staffUsername" class="input" placeholder="Username" required>
+        <input id="staffPassword" class="input" placeholder="Mật khẩu" required>
+        <select id="staffRank" class="input">
+          <option>Hạ Sĩ</option><option>Trung Sĩ</option><option>Thượng Sĩ</option><option>Thiếu Úy</option><option>Trung Úy</option><option>Thượng Úy</option><option>Đại Úy</option><option>Thiếu Tá</option><option>Trung Tá</option><option>Đại Tá</option>
+        </select>
+        <input id="staffPosition" class="input" placeholder="Chức vụ" required>
+        <select id="staffRole" class="input"><option value="officer">Officer</option><option value="admin">Admin</option></select>
+        <div style="grid-column:span 2;display:flex;gap:8px;justify-content:flex-end">
+          <button class="btn" type="submit">Thêm nhân sự</button>
+          <button class="btn" type="button" onclick="exportStaffCSV()">Xuất CSV</button>
+        </div>
+      </form>
+      <h4 style="margin-top:12px">Danh sách</h4>
+      <table class="table"><thead><tr><th>Họ tên</th><th>Username</th><th>Quân hàm</th><th>Chức vụ</th><th>Quyền</th><th></th></tr></thead><tbody id="staffTableBody"></tbody></table>
+    </div>
+  </div>
+<script src="assets/script.js"></script></body></html>

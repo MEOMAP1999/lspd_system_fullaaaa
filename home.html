@@ -1,0 +1,32 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LSPD • Home</title><link rel="stylesheet" href="assets/style.css"></head><body>
+  <div class="topbar header"><div style="display:flex;align-items:center;gap:12px"><img src="assets/lspd_badge.svg"><div class="small">LSPD • Personnel System</div></div><div><button class="btn" onclick="window.location.href='staff.html'">Quản lý</button> <button class="btn" onclick="logout()">Đăng xuất</button></div></div>
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div><h3>Chào mừng</h3><div class="small">Xin chào, <b id="officerName"></b></div></div>
+          <div class="pill">LSPD</div>
+        </div>
+        <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <h4>Chấm công</h4>
+        <p id="dateTime" class="small"></p>
+        <div style="display:flex;gap:10px;margin-top:8px">
+          <button class="btn" onclick="onDuty()">On Duty</button>
+          <button class="btn" onclick="offDuty()">Off Duty</button>
+        </div>
+        <h4 style="margin-top:16px">Lịch sử chấm công</h4>
+        <table class="table"><thead><tr><th>Vào ca</th><th>Ra ca</th></tr></thead><tbody id="historyBody"></tbody></table>
+      </div>
+      <div class="card">
+        <div style="text-align:center"><img src="assets/lspd_badge.svg" style="width:90px"></div>
+        <div style="margin-top:12px"><h4>Nhiệm vụ</h4><div class="small">Chấm công, quản lý nhân sự, xuất báo cáo</div></div>
+        <div style="margin-top:12px">
+          <div class="pill">Chấm công</div><div style="height:8px"></div>
+          <div class="pill">Bảo lãnh</div><div style="height:8px"></div>
+          <div class="pill">Đơn nghỉ phép</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© LSPD Portal</div>
+  </div>
+<script src="assets/script.js"></script></body></html>
